@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html5>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,10 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        :root {
+            --primary-color:#10192B;
+            --secondary-color: #32e753;
         }
         
         .tabs {
@@ -29,8 +33,8 @@
         }
         
         .tab.active {
-            color: #0066ff;
-            border-bottom: 2px solid #0066ff;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
         }
         
         #signup-form {
@@ -42,7 +46,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background: linear-gradient(135deg, #0066ff 0%, #001b44 100%);
+            background: linear-gradient(135deg, var(--primary-color) 0%, #001b44 100%);
         }
 
         .login-container {
@@ -57,7 +61,7 @@
 
         .welcome-panel {
             flex: 1;
-            background: linear-gradient(135deg, #0091ff 0%, #0046b8 100%);
+            background: linear-gradient(135deg, var(--primary-color) 0%, #0046b8 100%);
             padding: 40px;
             color: white;
             display: flex;
@@ -180,7 +184,7 @@
         }
 
         .forgot-link {
-            color: #0066ff;
+            color: var(--primary-color);
             text-decoration: none;
             font-size: 14px;
         }
@@ -188,7 +192,7 @@
         .login-btn {
             width: 100%;
             padding: 12px;
-            background: #0066ff;
+            background: var(--primary-color);
             color: white;
             border: none;
             border-radius: 8px;
@@ -224,7 +228,7 @@
             <div class="diagonal-lines"></div>
             <div class="logo">
                 <div class="logo-circle"></div>
-                <div class="logo-text">Deo co logo</div>
+                <div class="logo-text">De=</div>
             </div>
             <div class="welcome-content">
                 <h1 class="welcome-title">Hello,<br>welcome!</h1>
@@ -255,7 +259,7 @@
                     <a href="#" class="forgot-link">Forgot password?</a>
                 </div>
                 <button class="login-btn">Login</button>
-                <p class="signup-text">Not a member yet? <a href="#" onclick="showSignup(); return false;" style="color: #0066ff; text-decoration: none;">Sign up here</a></p>
+                <p class="signup-text">Not a member yet? <a href="#" onclick="showSignup(); return false;" style="color: var(--primary-color); text-decoration: none;">Sign up here</a></p>
             </div>
             
             <div id="signup-form">
@@ -282,7 +286,7 @@
                     </div>
                 </div>
                 <button class="signup-btn">Create Account</button>
-                <p class="signup-text" style="margin-top: 20px;">Already have an account? <a href="#" onclick="showLogin(); return false;" style="color: #0066ff; text-decoration: none;">Login here</a></p>
+                <p class="signup-text" style="margin-top: 20px;">Already have an account? <a href="#" onclick="showLogin(); return false;" style="color: var(--primary-color); text-decoration: none;">Login here</a></p>
             </div>
         </div>
     </div>

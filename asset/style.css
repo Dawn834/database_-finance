@@ -1,0 +1,154 @@
+* {
+    font-family: "Jost";
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.gradient-container {
+    width: 100%;
+    height: 100%;
+    background: url(./img/background.png) no-repeat;
+    background-size: cover;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #0a1325;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    height: 100vh;
+    position: fixed;
+}
+
+.logo {
+    padding: 0 0 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.logo span {
+    color: #8f9bba;
+}
+
+.main-menu,
+.account-pages {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 10px;
+}
+
+.menu-title {
+    font-size: 12px;
+    color: #8f9bba;
+    margin: 20px 0 10px 20px;
+    font-weight: 500;
+}
+
+.menu-item {
+    padding: 12px 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #8f9bba;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover{
+    background-color: #2563eb;
+    color: white;
+}
+
+.menu-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.help-card {
+    margin-top: auto;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: linear-gradient(135deg, #3461ff 0%, #3023ae 100%);
+    border-radius: 16px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.help-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(30%, -30%);
+}
+
+.help-card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.help-card p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+}
+
+.help-card .doc-btn {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.help-card .doc-btn:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.help-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Content area for demo purposes */
+.content {
+    flex: 1;
+    margin-left: 250px;
+    padding: 20px;
+}
