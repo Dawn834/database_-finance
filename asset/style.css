@@ -15,10 +15,11 @@ body {
     height: 100%;
     background: url(./img/background.png) no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .sidebar {
-    width: 250px;
+    width: 15%;
     background-color: #0a1325;
     color: white;
     display: flex;
@@ -151,4 +152,10 @@ body {
     flex: 1;
     margin-left: 250px;
     padding: 20px;
+}
+
+/* BI */
+.BI{
+    position: absolute;
+    right: 0;
 }
