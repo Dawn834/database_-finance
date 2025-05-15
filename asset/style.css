@@ -158,4 +158,9 @@ body {
 .BI{
     position: absolute;
     right: 0;
+    display: none;
+}
+
+.BI.active{
+    display: block;
 }

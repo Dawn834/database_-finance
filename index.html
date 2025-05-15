@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="main-menu">
-                    <a href="#" class="menu-item active">
+                    <a id="home-link" href="#" class="menu-item active">
                         <div class="menu-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 viewBox="0 0 16 16">
@@ -34,7 +34,7 @@
                         </div>
                         <span>Home</span>
                     </a>
-                    <a href="#" class="menu-item">
+                    <a id="stock-link" href="#" class="menu-item">
                         <div class="menu-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 viewBox="0 0 16 16">
@@ -117,13 +117,81 @@
                 </div>
             </div>
         </div>
-        <iframe class="BI" title="hehee" width="85%" height="100%"
+        <iframe class="BI" id="home-iframe" title="hehee" width="85%" height="100%"
             src="https://app.powerbi.com/reportEmbed?reportId=f44f1f4e-0a9b-40eb-8fc0-86e619c85319&autoAuth=true&ctid=e7572e92-7aee-4713-a3c4-ba64888ad45f"
             frameborder="0" allowFullScreen="true"></iframe>
-        <iframe class="BI" title="đang làm" width="600" height="373.5"
+        <iframe class="BI" id="stock-iframe" title="đang làm" width="85%" height="100%"
             src="https://app.powerbi.com/view?r=eyJrIjoiNmI4ZWYzNGQtMGNjZi00NjBjLTg3MGEtYTFhN2RhN2FhMjA2IiwidCI6IjcxZDU4NzQ5LTc3ZGUtNDMxYi1hMTAyLTNlNTM2YjY3MWY5MiIsImMiOjEwfQ%3D%3D"
             frameborder="0" allowFullScreen="true"></iframe>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const homeLink = document.getElementById('home-link');
+            const stockLink = document.getElementById('stock-link');
+            const homeIframe = document.getElementById('home-iframe');
+            const stockIframe = document.getElementById('stock-iframe');
+
+            // Ban đầu không có iframe nào được hiển thị
+
+            // Hàm để ẩn tất cả các iframe
+            function hideAllIframes() {
+                const iframes = document.querySelectorAll('.iframe-container');
+                iframes.forEach(iframe => {
+                    iframe.classList.remove('active');
+                });
+            }
+
+            // Hàm để cập nhật trạng thái active của các liên kết
+            function updateNavLinks(activeLink = null) {
+                const navLinks = document.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                }
+            }
+
+            // Xử lý sự kiện khi nhấp vào Home
+            homeLink.addEventListener('click', function () {
+                // Ẩn iframe Stock nếu đang hiển thị
+                stockIframe.classList.remove('active');
+
+                // Kiểm tra trạng thái hiện tại của iframe Home
+                if (homeIframe.classList.contains('active')) {
+                    // Nếu đang hiển thị, ẩn nó
+                    homeIframe.classList.remove('active');
+                    // Bỏ đánh dấu active cho tất cả liên kết
+                    updateNavLinks();
+                } else {
+                    // Nếu đang ẩn, hiển thị nó
+                    homeIframe.classList.add('active');
+                    // Đánh dấu liên kết Home là active
+                    updateNavLinks(homeLink);
+                }
+            });
+
+            // Xử lý sự kiện khi nhấp vào Stock
+            stockLink.addEventListener('click', function () {
+                // Ẩn iframe Home nếu đang hiển thị
+                homeIframe.classList.remove('active');
+
+                // Kiểm tra trạng thái hiện tại của iframe Stock
+                if (stockIframe.classList.contains('active')) {
+                    // Nếu đang hiển thị, ẩn nó
+                    stockIframe.classList.remove('active');
+                    // Bỏ đánh dấu active cho tất cả liên kết
+                    updateNavLinks();
+                } else {
+                    // Nếu đang ẩn, hiển thị nó
+                    stockIframe.classList.add('active');
+                    // Đánh dấu liên kết Stock là active
+                    updateNavLinks(stockLink);
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
