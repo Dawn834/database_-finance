@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./asset/reset.css">
     <link rel="stylesheet" href="./asset/style.css">
+    <script src="./asset/script.js"></script>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
                 </div>
 
                 <div class="main-menu">
-                    <a id="home-link" href="#" class="menu-item active">
+                    <a  href="#" class="menu-item active">
                         <div class="menu-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 viewBox="0 0 16 16">
@@ -34,7 +35,7 @@
                         </div>
                         <span>Home</span>
                     </a>
-                    <a id="stock-link" href="#" class="menu-item">
+                    <a href="#" class="menu-item">
                         <div class="menu-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 viewBox="0 0 16 16">
@@ -69,7 +70,7 @@
                 <div class="menu-title">ACCOUNT PAGES</div>
 
                 <div class="account-pages">
-                    <a href="#" class="menu-item">
+                    <a href="./login.html" id="signin-up">
                         <div class="menu-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 viewBox="0 0 16 16">
@@ -77,9 +78,9 @@
                                     d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
                             </svg>
                         </div>
-                        <span>Profile</span>
+                        <span>Sign In/Up</span>
                     </a>
-                    <a href="#" class="menu-item">
+                    <!-- <a href="#" class="menu-item">
                         <div class="menu-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 viewBox="0 0 16 16">
@@ -101,97 +102,36 @@
                         </div>
                         <span>Sign Up</span>
                     </a>
-                </div>
+                </div> -->
 
-                <div class="help-card">
-                    <div class="help-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                            <path
-                                d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
-                        </svg>
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                                viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                            </svg>
+                        </div>
+                        <h3>Need help?</h3>
+                        <p>Please check our docs</p>
+                        <a href="#" class="doc-btn">DOCUMENTATION</a>
                     </div>
-                    <h3>Need help?</h3>
-                    <p>Please check our docs</p>
-                    <a href="#" class="doc-btn">DOCUMENTATION</a>
                 </div>
             </div>
+            <div class="iframe-container">
+                <iframe title="index" class="BI index-iframe " width="1140" height="541.25"
+                    src="https://app.powerbi.com/reportEmbed?reportId=0ba0e83c-40d9-49d4-9442-baa8fde94c24&autoAuth=true&ctid=e7572e92-7aee-4713-a3c4-ba64888ad45f"
+                    frameborder="0" allowFullScreen="true"></iframe>
+                <iframe title="stock" class="BI stock-iframe" width="1140" height="541.25"
+                    src="https://app.powerbi.com/reportEmbed?reportId=04cd7d33-07eb-41fc-ada2-43deb8b12d55&autoAuth=true&ctid=e7572e92-7aee-4713-a3c4-ba64888ad45f"
+                    frameborder="0" allowFullScreen="true"></iframe>
+                <iframe title="Company" class="BI company-iframe" width="85%" height="100%"
+                    src="https://app.powerbi.com/reportEmbed?reportId=0db37175-6ada-4135-88cd-d008bd1a8884&autoAuth=true&ctid=e7572e92-7aee-4713-a3c4-ba64888ad45f"
+                    frameborder="0" allowFullScreen="true"></iframe>
+            </div>
         </div>
-        <iframe class="BI" id="home-iframe" title="hehee" width="85%" height="100%"
-            src="https://app.powerbi.com/reportEmbed?reportId=f44f1f4e-0a9b-40eb-8fc0-86e619c85319&autoAuth=true&ctid=e7572e92-7aee-4713-a3c4-ba64888ad45f"
-            frameborder="0" allowFullScreen="true"></iframe>
-        <iframe class="BI" id="stock-iframe" title="đang làm" width="85%" height="100%"
-            src="https://app.powerbi.com/view?r=eyJrIjoiNmI4ZWYzNGQtMGNjZi00NjBjLTg3MGEtYTFhN2RhN2FhMjA2IiwidCI6IjcxZDU4NzQ5LTc3ZGUtNDMxYi1hMTAyLTNlNTM2YjY3MWY5MiIsImMiOjEwfQ%3D%3D"
-            frameborder="0" allowFullScreen="true"></iframe>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const homeLink = document.getElementById('home-link');
-            const stockLink = document.getElementById('stock-link');
-            const homeIframe = document.getElementById('home-iframe');
-            const stockIframe = document.getElementById('stock-iframe');
-
-            // Ban đầu không có iframe nào được hiển thị
-
-            // Hàm để ẩn tất cả các iframe
-            function hideAllIframes() {
-                const iframes = document.querySelectorAll('.iframe-container');
-                iframes.forEach(iframe => {
-                    iframe.classList.remove('active');
-                });
-            }
-
-            // Hàm để cập nhật trạng thái active của các liên kết
-            function updateNavLinks(activeLink = null) {
-                const navLinks = document.querySelectorAll('.nav-link');
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                });
-
-                if (activeLink) {
-                    activeLink.classList.add('active');
-                }
-            }
-
-            // Xử lý sự kiện khi nhấp vào Home
-            homeLink.addEventListener('click', function () {
-                // Ẩn iframe Stock nếu đang hiển thị
-                stockIframe.classList.remove('active');
-
-                // Kiểm tra trạng thái hiện tại của iframe Home
-                if (homeIframe.classList.contains('active')) {
-                    // Nếu đang hiển thị, ẩn nó
-                    homeIframe.classList.remove('active');
-                    // Bỏ đánh dấu active cho tất cả liên kết
-                    updateNavLinks();
-                } else {
-                    // Nếu đang ẩn, hiển thị nó
-                    homeIframe.classList.add('active');
-                    // Đánh dấu liên kết Home là active
-                    updateNavLinks(homeLink);
-                }
-            });
-
-            // Xử lý sự kiện khi nhấp vào Stock
-            stockLink.addEventListener('click', function () {
-                // Ẩn iframe Home nếu đang hiển thị
-                homeIframe.classList.remove('active');
-
-                // Kiểm tra trạng thái hiện tại của iframe Stock
-                if (stockIframe.classList.contains('active')) {
-                    // Nếu đang hiển thị, ẩn nó
-                    stockIframe.classList.remove('active');
-                    // Bỏ đánh dấu active cho tất cả liên kết
-                    updateNavLinks();
-                } else {
-                    // Nếu đang ẩn, hiển thị nó
-                    stockIframe.classList.add('active');
-                    // Đánh dấu liên kết Stock là active
-                    updateNavLinks(stockLink);
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
