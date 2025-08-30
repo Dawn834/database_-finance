@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./asset/reset.css">
     <link rel="stylesheet" href="./asset/style.css">
+    <script src="./asset/script.js"></script>
+
 </head>
 
 <body>
@@ -69,7 +71,7 @@
                 <div class="menu-title">ACCOUNT PAGES</div>
 
                 <div class="account-pages">
-                    <a href="#" class="menu-item">
+                    <a href="./login.html" id="signin-up">
                         <div class="menu-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 viewBox="0 0 16 16">
@@ -77,9 +79,9 @@
                                     d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
                             </svg>
                         </div>
-                        <span>Profile</span>
+                        <span>Sign In/Up</span>
                     </a>
-                    <a href="#" class="menu-item">
+                    <!-- <a href="#" class="menu-item">
                         <div class="menu-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 viewBox="0 0 16 16">
@@ -101,22 +103,287 @@
                         </div>
                         <span>Sign Up</span>
                     </a>
-                </div>
+                </div> -->
 
-                <div class="help-card">
-                    <div class="help-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                            <path
-                                d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
-                        </svg>
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                                viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                            </svg>
+                        </div>
+                        <h3>Need help?</h3>
+                        <p>Please check our docs</p>
+                        <a href="#" class="doc-btn">DOCUMENTATION</a>
                     </div>
-                    <h3>Need help?</h3>
-                    <p>Please check our docs</p>
-                    <a href="#" class="doc-btn">DOCUMENTATION</a>
+                </div>
+            </div>
+            <div class="iframe-container">
+                <div class="dashboard">
+        <!-- Header -->
+        <!-- <header class="header">
+            <div class="logo">📈 Finance</div>
+            <nav class="nav">
+                <a href="#" class="nav-item active">US Markets</a>
+                <a href="#" class="nav-item">Crypto</a>
+                <a href="#" class="nav-item">Commodities</a>
+            </nav>
+            <div class="market-status">
+                <div>Jun 18, 2025 - Market Closed</div>
+                <div>Neutral Sentiment</div>
+            </div>
+        </header> -->
+
+        <!-- Row 1: Realtime Prices & Watchlist -->
+        <div class="row-1">
+            <div class="realtime-section">
+                <div class="market-indices">
+                    <div class="index-card">
+                        <div class="index-name">S&P Fut.</div>
+                        <div class="index-value">5,486</div>
+                        <div class="index-change positive">
+                            ↗ +0.24%
+                        </div>
+                        <div class="mini-chart"></div>
+                    </div>
+
+                    <div class="index-card">
+                        <div class="index-name">NASDAQ Fut.</div>
+                        <div class="index-value">21,851</div>
+                        <div class="index-change positive">
+                            ↗ +0.35%
+                        </div>
+                        <div class="mini-chart"></div>
+                    </div>
+
+                    <div class="index-card">
+                        <div class="index-name">Dow Fut.</div>
+                        <div class="index-value">42,634</div>
+                        <div class="index-change positive">
+                            ↗ +0.16%
+                        </div>
+                        <div class="mini-chart"></div>
+                    </div>
+
+                    <div class="index-card">
+                        <div class="index-name">VIX</div>
+                        <div class="index-value">12.45</div>
+                        <div class="index-change negative">
+                            ↘ -2.1%
+                        </div>
+                        <div class="mini-chart" style="background: linear-gradient(90deg, #ff4757 0%, #cc0000 100%);">
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <div class="watchlist-section">
+                <div class="watchlist-header">
+                    <h3 class="watchlist-title">My Watchlist</h3>
+                    <!-- <button class="create-watchlist-btn">Create Watchlist</button> -->
+                </div>
+
+                <!-- <div class="stock-list">
+                    <div class="stock-item">
+                        <div class="stock-info">
+                            <div class="stock-logo" style="background: #ff9500;">A</div>
+                            <div class="stock-details">
+                                <h4>Amazon.com, Inc.</h4>
+                                <span>AMZN</span>
+                            </div>
+                        </div>
+                        <div class="stock-price">
+                            <div class="price">214.82 US$</div>
+                            <div class="change positive">+0.89%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stock-item">
+                        <div class="stock-info">
+                            <div class="stock-logo" style="background: #4285f4;">G</div>
+                            <div class="stock-details">
+                                <h4>Alphabet Inc.</h4>
+                                <span>GOOGL</span>
+                            </div>
+                        </div>
+                        <div class="stock-price">
+                            <div class="price">177.23 US$</div>
+                            <div class="change negative">-0.34%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stock-item">
+                        <div class="stock-info">
+                            <div class="stock-logo" style="background: #1877f2;">M</div>
+                            <div class="stock-details">
+                                <h4>Meta Platforms, Inc.</h4>
+                                <span>META</span>
+                            </div>
+                        </div>
+                        <div class="stock-price">
+                            <div class="price">697.23 US$</div>
+                            <div class="change negative">-0.73%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stock-item">
+                        <div class="stock-info">
+                            <div class="stock-logo" style="background: #cc0000;">T</div>
+                            <div class="stock-details">
+                                <h4>Tesla, Inc.</h4>
+                                <span>TSLA</span>
+                            </div>
+                        </div>
+                        <div class="stock-price">
+                            <div class="price">316.35 US$</div>
+                            <div class="change negative">-3.88%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stock-item">
+                        <div class="stock-info">
+                            <div class="stock-logo" style="background: #00a86b;">C</div>
+                            <div class="stock-details">
+                                <h4>Cardinal Health, Inc.</h4>
+                                <span>CAH</span>
+                            </div>
+                        </div>
+                        <div class="stock-price">
+                            <div class="price">164.91 US$</div>
+                            <div class="change positive">+1.54%</div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div id="status" class="status">Đang kết nối...</div>
+                <div id="loading" class="loading">Đang tải dữ liệu cổ phiếu...</div>
+
+                <table id="stockTable" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>Mã Cổ Phiếu</th>
+                            <th>Giá (US$)</th>
+                            <th>Thay Đổi (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <!-- Row 2: Market Summary -->
+        <div class="row-2">
+            <h2 class="market-summary-title">Market Summary</h2>
+            <!-- <div class="news-list">
+                <div class="news-item">
+                    <div class="news-content">
+                        <a href="#" class="news-title">U.S. Equities Retreat on Geopolitical Tensions</a>
+                        <p class="news-description">The S&P 500 fell 0.84%, the Nasdaq dropped 1.00%, and the Dow
+                            declined 0.7% as investors reacted to intensifying conflict between Israel and Iran and the
+                            prospect of potential U.S. involvement.</p>
+                    </div>
+                    <div class="news-meta">
+                        <span>Market Watch</span>
+                        <span>44 minutes ago</span>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-content">
+                        <a href="#" class="news-title">Technology and Momentum Stocks Lead Declines</a>
+                        <p class="news-description">Major tech names including Microsoft, Apple, Alphabet, and Nvidia
+                            underperformed, reversing Monday's gains. The sell-off was particularly pronounced in
+                            high-valuation, momentum-driven sectors.</p>
+                    </div>
+                    <div class="news-meta">
+                        <span>Reuters</span>
+                        <span>1 hour ago</span>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-content">
+                        <a href="#" class="news-title">Renewable Energy Stocks Plummet on Policy Risks</a>
+                        <p class="news-description">Clean energy companies face significant headwinds as policy
+                            uncertainty and changing regulations create volatility in the sector. Solar and wind energy
+                            stocks particularly affected.</p>
+                    </div>
+                    <div class="news-meta">
+                        <span>Bloomberg</span>
+                        <span>2 hours ago</span>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-content">
+                        <a href="#" class="news-title">Fed Officials Signal Cautious Approach to Rate Cuts</a>
+                        <p class="news-description">Federal Reserve officials indicate a measured approach to monetary
+                            policy adjustments, citing ongoing inflation concerns and labor market strength as key
+                            factors in future decisions.</p>
+                    </div>
+                    <div class="news-meta">
+                        <span>Wall Street Journal</span>
+                        <span>3 hours ago</span>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-content">
+                        <a href="#" class="news-title">Cryptocurrency Market Shows Mixed Signals</a>
+                        <p class="news-description">Bitcoin and Ethereum experience volatile trading as institutional
+                            adoption continues while regulatory uncertainties persist in major markets worldwide.</p>
+                    </div>
+                    <div class="news-meta">
+                        <span>CoinDesk</span>
+                        <span>4 hours ago</span>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-content">
+                        <a href="#" class="news-title">Oil Prices Surge Amid Supply Chain Concerns</a>
+                        <p class="news-description">Crude oil futures jump on geopolitical tensions and supply
+                            disruption fears, with Brent crude reaching multi-month highs as traders assess global
+                            energy security risks.</p>
+                    </div>
+                    <div class="news-meta">
+                        <span>Financial Times</span>
+                        <span>5 hours ago</span>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <div id="loading" class="status loading">🔄 Đang tải tin tức...</div>
+            <div id="error" class="status error">❌ Không thể tải tin tức. Vui lòng thử lại sau.</div>
+            <div id="success" class="status success" style="display:none;">✅ Đã tải thành công!</div>
+
+            <div id="news-container"></div>
+        </div>
+
+        <button class="refresh-btn" onclick="fetchNews()" title="Làm mới tin tức">🔄</button>
+
+                </div>
+                <iframe title="index" class="BI index-iframe " width="1140" height="541.25"
+                    src="https://app.powerbi.com/reportEmbed?reportId=0ba0e83c-40d9-49d4-9442-baa8fde94c24&autoAuth=true&ctid=e7572e92-7aee-4713-a3c4-ba64888ad45f"
+                    frameborder="0" allowFullScreen="true"></iframe>
+                <iframe title="stock" class="BI stock-iframe" width="1140" height="541.25"
+                    src="https://app.powerbi.com/reportEmbed?reportId=04cd7d33-07eb-41fc-ada2-43deb8b12d55&autoAuth=true&ctid=e7572e92-7aee-4713-a3c4-ba64888ad45f"
+                    frameborder="0" allowFullScreen="true"></iframe>
+                <!-- <iframe title="Company" class="BI company-iframe" width="85%" height="100%"
+                    src="https://app.powerbi.com/reportEmbed?reportId=0db37175-6ada-4135-88cd-d008bd1a8884&autoAuth=true&ctid=e7572e92-7aee-4713-a3c4-ba64888ad45f"
+                    frameborder="0" allowFullScreen="true"></iframe> -->
+                <iframe title="Company" class="BI company-iframe" width="1140" height="541.25"
+                    src="https://app.powerbi.com/reportEmbed?reportId=0db37175-6ada-4135-88cd-d008bd1a8884&autoAuth=true&ctid=e7572e92-7aee-4713-a3c4-ba64888ad45f"
+                    frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="/asset/app.js"></script>
+    <script src="/asset/new-index.js"></script>
 </body>
 
 </html>
